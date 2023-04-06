@@ -1,0 +1,34 @@
+{
+    "users": [
+      {
+        "user": "User1",
+        "height":165,
+        "weight":47
+      },
+      {
+        "user": "User2",
+        "height":180,
+        "weight":70
+      },
+      {
+        "user": "User3",
+        "height":155,
+        "weight":45
+      },
+      {
+        "user": "User4",
+        "height":180,
+        "weight":83
+      },
+      {
+        "user": "User5",
+        "height":176,
+        "weight":67
+      },
+      {
+        "user": "User6",
+        "height":164,
+        "weight":53
+      }
+    ]
+  }

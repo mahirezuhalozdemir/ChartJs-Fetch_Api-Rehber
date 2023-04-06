@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!-- chartjs 4.2.1 import etmek için -->
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"
+        integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.js"
+        integrity="sha512-Cv3WnEz5uGwmTnA48999hgbYV1ImGjsDWyYQakowKw+skDXEYYSU+rlm9tTflyXc8DbbKamcLFF80Cf89f+vOQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"
+        integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.min.js"
+        integrity="sha512-GCiwmzA0bNGVsp1otzTJ4LWQT2jjGJENLGyLlerlzckNI30moi2EQT0AfRI7fLYYYDKR+7hnuh35r3y1uJzugw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootstrap5 import etmek için  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jquery import etmek için -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <h4 class="text-primary mt-2">ChartJS Graphs</h4>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="btn-group-sm mt-3" role="group">
+                        <button type="button" class="btn btn-success" onclick="lineChart()">Line Chart</button>
+                        <button type="button" class="btn btn-success" onclick="barChart()">Bar Chart</button>
+                        <button type="button" class="btn btn-success" onclick="scatterChart()">Scatter Plots</button>
+                        <button type="button" class="btn btn-success" onclick="pieChart()">Pie Chart</button>
+                        <button type="button" class="btn btn-success" onclick="areaChart()">Area Chart</button>
+                        <button type="button" class="btn btn-success" onclick="bubbleChart()">Bubble Chart</button>
+                        <button type="button" class="btn btn-success" onclick="radarChart()">Radar Chart</button>
+                        <button type="button" class="btn btn-success" onclick="donutChart()">Doughnut Chart</button>
+                        <button type="button" class="btn btn-success" onclick="mixedChart()">Mixed Chart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <div id="chartDiv" class="chart-container justify-content-center" style="height:60vh; width:60vw ">
+                        <canvas class="mt-5" id="myChart" width="300" height="300 aria-label=" charts"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./chart.js"></script>
+
+</body>
+
+</html>
